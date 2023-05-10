@@ -26,7 +26,7 @@ class Router
         // Arreglo de rutas protegidas..
         $rutas_protegidas = ['/admin', '/propiedades/crear', '/propiedades/actualizar', '/propiedades/eliminar', '/vendedores/crear', '/vendedores/actualizar', '/vendedores/eliminar', '/blogs/crear', '/blogs/actualizar', '/blogs/eliminar'];
 
-        $urlActual = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI'];
+        $urlActual = $_SERVER['PATH_INFO'] ?? '/';
         $metodo = $_SERVER['REQUEST_METHOD'];
 
         if ($metodo === 'GET') {
@@ -44,6 +44,7 @@ class Router
             // La URL existe y hay una función asociada
             call_user_func($fn, $this);
         } else {
+            debuguear($urlActual);
             echo "Página No Encontrada";
         }
     }
