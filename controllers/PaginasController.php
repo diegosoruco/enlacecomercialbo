@@ -84,8 +84,8 @@ class PaginasController
             $mail->isSMTP();
             $mail->Host = 'sandbox.smtp.mailtrap.io';
             $mail->SMTPAuth = true;
-            $mail->Username = 'adc8ae031be52d';
-            $mail->Password = 'c778d5312589b3';
+            $mail->Username = 'a02fa120a17230';
+            $mail->Password = $_ENV['CORREO_CONTRASENA'];
             $mail->SMTPSecure = 'tls';
             $mail->Port = 2525;
 
@@ -129,7 +129,7 @@ class PaginasController
             if ($mail->send()) {
                 $mensaje = "Mensaje enviado Correctamente";
             } else {
-                $mensaje = "El mensaje no es pudo enviar...";
+                $mensaje = "El mensaje no se pudo enviar...";
             }
         }
 

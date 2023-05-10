@@ -2,8 +2,13 @@
     <h1>Contacto</h1>
 
     <?php if ($mensaje) { ?>
-        <p class='alerta exito'> <?php echo $mensaje; ?></p>;
+        <?php if ($mensaje == "Mensaje enviado Correctamente") { ?>
+            <p class="alerta exito"><?php echo $mensaje; ?></p>
+        <?php } else { ?>
+            <p class="alerta error"><?php echo $mensaje; ?></p>
+        <?php } ?>
     <?php } ?>
+
 
     <picture>
         <source srcset="build/img/destacada3.webp" type="image/webp">
