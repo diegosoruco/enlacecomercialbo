@@ -46,7 +46,6 @@ class ActiveRecord
         $query .= join("', '", array_values($atributos));
         $query .= " ') ";
 
-        debuguear($query);
         $resultado = self::$db->query($query);
 
         // Mensaje de exito o error
