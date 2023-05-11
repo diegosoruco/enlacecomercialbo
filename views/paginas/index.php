@@ -32,7 +32,7 @@
     </section>
 
     <section class="testimoniales">
-        <h3>Testimoniales</h3>
+        <h3>Testimonios</h3>
 
         <div class="testimonial">
             <blockquote>
