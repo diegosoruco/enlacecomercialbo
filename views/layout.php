@@ -48,7 +48,7 @@ if (!isset($inicio)) {
                 </div>
             </div> <!--.barra-->
 
-            <?php echo $inicio ? "<h1>Venta de Casas y Departamentos Exclusivos de Lujo</h1>" : ''; ?>
+            <?php echo $inicio ? "<h1>Venta y Alquiler de Casas y Departamentos Exclusivos de Lujo</h1>" : ''; ?>
         </div>
     </header>
 

@@ -5,7 +5,7 @@
 </main>
 
 <section class="seccion contenedor">
-    <h2>Casas y Depas en Venta</h2>
+    <h2>Departamentos y Casas en Venta o Alquiler</h2>
 
     <?php
     include 'listado.php';
@@ -17,7 +17,7 @@
 </section>
 
 <section class="imagen-contacto">
-    <h2>Encuentra la casa de tus sueños</h2>
+    <h2>Encuentra el hogar de tus sueños</h2>
     <p>Llena el formulario de contacto y un asesor se pondra en contacto contigo a la brevedad</p>
     <a href="/contacto" class="boton-amarillo">Contactános</a>
 </section>
