@@ -47,6 +47,7 @@ class ActiveRecord
         $query .= " ') ";
 
         $resultado = self::$db->query($query);
+        debuguear($resultado);
 
         // Mensaje de exito o error
         if ($resultado) {
